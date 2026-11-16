@@ -13,7 +13,7 @@ tags:
   - "claude-code"
   - "voltagent"
 captain:
-  role: "volt-llm-architect@1.0.0"
+  role: "volt-data-ai-lead@1.0.0"
 handover:
   - title: "先核数据与模型的版本，再谈指标"
     detail: "上游角色默认能跑评估；档案不声明任何评估口径。"

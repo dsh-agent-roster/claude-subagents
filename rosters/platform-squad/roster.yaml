@@ -13,7 +13,7 @@ tags:
   - "claude-code"
   - "voltagent"
 captain:
-  role: "volt-cloud-architect@1.0.0"
+  role: "volt-platform-lead@1.0.0"
 handover:
   - title: "先核当前环境的版本与权限边界"
     detail: "这套角色默认能读生产配置；档案不声明任何凭据，凭据由部署负责。"

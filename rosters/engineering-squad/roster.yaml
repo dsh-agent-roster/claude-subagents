@@ -12,7 +12,7 @@ tags:
   - "voltagent"
   - "review"
 captain:
-  role: "volt-api-designer@1.0.0"
+  role: "volt-engineering-lead@1.0.0"
 handover:
   - title: "先核上游工具声明与实际可用工具的差距"
     detail: "VoltAgent 每个角色都声明了 Claude Code 的工具列表；本档案只保留正文，工具边界没有映射成 toolPolicy。"
