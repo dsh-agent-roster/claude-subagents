@@ -1,0 +1,35 @@
+kind: "dsh-agent-roster/roster@2"
+id: "engineering-squad"
+version: "1.0.0"
+title: "工程小队（VoltAgent 迁移）"
+description: "把 VoltAgent/awesome-claude-code-subagents（MIT）的核心开发角色迁成一套档案：接口设计、后端、前端、代码审查、测试自动化。"
+license: "MIT"
+maintainers:
+  - "STofone"
+tags:
+  - "engineering"
+  - "claude-code"
+  - "voltagent"
+  - "review"
+captain:
+  role: "volt-api-designer@1.0.0"
+handover:
+  - title: "先核上游工具声明与实际可用工具的差距"
+    detail: "VoltAgent 每个角色都声明了 Claude Code 的工具列表；本档案只保留正文，工具边界没有映射成 toolPolicy。"
+    verify: "roster_verify 报 0 降级；成员工具边界与部署一致"
+  - title: "换代时把上一代的 review 结论与未合入的改动带过去"
+    detail: "review 的历史不在档案里，只在上一代会话里。"
+    verify: "新会话首条消息含本清单与上一代 review 结论"
+targets:
+  - "agent-teams/members"
+members:
+  - as: "api-designer"
+    role: "volt-api-designer@1.0.0"
+  - as: "backend-developer"
+    role: "volt-backend-developer@1.0.0"
+  - as: "frontend-developer"
+    role: "volt-frontend-developer@1.0.0"
+  - as: "code-reviewer"
+    role: "volt-code-reviewer@1.0.0"
+  - as: "test-automator"
+    role: "volt-test-automator@1.0.0"

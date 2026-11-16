@@ -1,0 +1,36 @@
+kind: "dsh-agent-roster/roster@2"
+id: "data-ai-squad"
+version: "1.0.0"
+title: "数据与 AI 小队（VoltAgent 迁移）"
+description: "把 VoltAgent/awesome-claude-code-subagents（MIT）的数据与 AI 角色迁成一套档案：LLM 架构、数据工程、数据科学、MLOps、AI 工程。"
+license: "MIT"
+maintainers:
+  - "STofone"
+tags:
+  - "data"
+  - "ai"
+  - "ml"
+  - "claude-code"
+  - "voltagent"
+captain:
+  role: "volt-llm-architect@1.0.0"
+handover:
+  - title: "先核数据与模型的版本，再谈指标"
+    detail: "上游角色默认能跑评估；档案不声明任何评估口径。"
+    verify: "新会话首条消息写明数据集版本与模型版本"
+  - title: "换代时把未跑完的实验与判据带过去"
+    detail: "实验上下文只在会话里，不在档案里。"
+    verify: "新会话首条消息含实验 id 与判据命令"
+targets:
+  - "agent-teams/members"
+members:
+  - as: "llm-architect"
+    role: "volt-llm-architect@1.0.0"
+  - as: "data-engineer"
+    role: "volt-data-engineer@1.0.0"
+  - as: "data-scientist"
+    role: "volt-data-scientist@1.0.0"
+  - as: "mlops-engineer"
+    role: "volt-mlops-engineer@1.0.0"
+  - as: "ai-engineer"
+    role: "volt-ai-engineer@1.0.0"

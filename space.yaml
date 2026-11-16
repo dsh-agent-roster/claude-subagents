@@ -1,0 +1,12 @@
+kind: "dsh-agent-roster/space@1"
+space: "claude-subagents"
+title: "VoltAgent 子代理（迁移）"
+description: "把 VoltAgent/awesome-claude-code-subagents 的 100+ 子代理挑成三套档案：工程、平台、数据与 AI。"
+license: "MIT"
+maintainers:
+  - "STofone"
+layout: "monorepo"
+rosters:
+  - id: "engineering-squad"
+  - id: "platform-squad"
+  - id: "data-ai-squad"

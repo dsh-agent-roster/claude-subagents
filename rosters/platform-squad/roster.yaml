@@ -1,0 +1,36 @@
+kind: "dsh-agent-roster/roster@2"
+id: "platform-squad"
+version: "1.0.0"
+title: "平台小队（VoltAgent 迁移）"
+description: "把 VoltAgent/awesome-claude-code-subagents（MIT）的基础设施与安全角色迁成一套档案：云架构、Kubernetes、发布、事故响应、安全审计。"
+license: "MIT"
+maintainers:
+  - "STofone"
+tags:
+  - "platform"
+  - "infrastructure"
+  - "security"
+  - "claude-code"
+  - "voltagent"
+captain:
+  role: "volt-cloud-architect@1.0.0"
+handover:
+  - title: "先核当前环境的版本与权限边界"
+    detail: "这套角色默认能读生产配置；档案不声明任何凭据，凭据由部署负责。"
+    verify: "新会话首条消息列明可读的环境与禁止动作"
+  - title: "换代前把未关闭的事故与变更窗口写进摘要"
+    detail: "事故上下文只在会话里，不在档案里。"
+    verify: "新会话首条消息含未关闭事故 id 与变更窗口"
+targets:
+  - "agent-teams/members"
+members:
+  - as: "cloud-architect"
+    role: "volt-cloud-architect@1.0.0"
+  - as: "kubernetes-specialist"
+    role: "volt-kubernetes-specialist@1.0.0"
+  - as: "deployment-engineer"
+    role: "volt-deployment-engineer@1.0.0"
+  - as: "incident-responder"
+    role: "volt-incident-responder@1.0.0"
+  - as: "security-auditor"
+    role: "volt-security-auditor@1.0.0"
